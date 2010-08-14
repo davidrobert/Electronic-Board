@@ -50,19 +50,7 @@ A proposta deste projeto é construir um tabuleiro eletrônico, a qual possa, po
 
 \section{Introdução}
 
-A estrutura principal da mesa será composta por um conjunto de celulas hexagonais e retangulares, que ficarão sob um tampo de vidro fumê. 
-Cada uma células hexagonais será composta por dois LEDs RGB separado por uma divisoria que cortará ao meio a célula. 
-A célula hexagonal será construida com acrílico com espessura de 5mm. Sendo que abaixo de cada uma das facetas de acrílico do hexagono terá um LED monocro\-mático.
-%Desta maneira ao ser ligado os LEDs sob...
-Cada uma das células retangulares será composta por um unico LED monocromático. \\
-
-Cada uma dos LEDs (RGBs ou monocromáticos) poderá ser controlado individualmente.
-
-%Em diferentes literaturas os termos {\it tabuleiro eletrônico}, {\it mesa digital}, etc...
-
-\section{Descrição}
-
-A central de controle da mesa sera composta por um Arduino com conexão WiFi (por meio de um shield ou mesmo pela utilização de um BlackWidow) e um conjunto de Rainbowduino. \\
+\ldots
 
 \begin{center}
 \begin{figure}[h!]
@@ -73,7 +61,22 @@ A central de controle da mesa sera composta por um Arduino com conexão WiFi (po
 \end{figure}
 \end{center}
 
-\subsection{Estrutura}
+\section{Estrutura}
+
+
+{\it (falta complementar e reorganizar esta seção)} \\
+
+A estrutura principal da mesa será composta por um conjunto de celulas hexagonais e retangulares, que ficarão sob um tampo de vidro fumê. 
+Cada uma células hexagonais será composta por dois LEDs RGB separado por uma divisoria que cortará ao meio a célula. 
+A célula hexagonal será construida com acrílico com espessura de 5mm. Sendo que abaixo de cada uma das facetas de acrílico do hexagono terá um LED monocro\-mático.
+%Desta maneira ao ser ligado os LEDs sob...
+Cada uma das células retangulares será composta por um unico LED monocromático. \\
+
+Cada uma dos LEDs (RGBs ou monocromáticos) poderá ser controlado individualmente. \\
+
+%Em diferentes literaturas os termos {\it tabuleiro eletrônico}, {\it mesa digital}, etc...
+
+A central de controle da mesa sera composta por um Arduino com conexão WiFi (por meio de um shield ou mesmo pela utilização de um BlackWidow) e um conjunto de Rainbowduino. \\
 
 Cada exagono que compõe a estrutura central da mesa terá dois LEDs RGB de 5mm. A estrutura utilizada na divisoria ainda não esta definida, mas deve ser de um material fino o suficiente para não permitir a percepção visual de separação quando os dois lados esta com os LEDs ligados na mesma tonalidade e intensidade de cor. E também não deve permitir a passagem de luminosidade quando somente um dos lados estiver com o LED ligado.
 
@@ -95,20 +98,39 @@ Cada exagono que compõe a estrutura central da mesa terá dois LEDs RGB de 5mm.
 \end{figure}
 \end{center}
 
-
-\subsection{Hardware}
-
-\ldots
-
-\subsubsection{Componentes}
+{\it (falta incluir figura demonstrando somente parte das bordas de uma célula hexadecimal acesa)}
+s
+\section{Hardware}
 
 \ldots
 
-\subsection{Software}
+\subsection{Arquitetura}
+
+{\it (incluir figura do esquema da arquitetura)}
+\ldots
+
+\subsection{Arduino}
+
+\ldots
+
+\section{Software}
 
 O sistema de controle do tabuleiro digital será implementado em Java \ldots
 
+\subsection{Protocolo de Comunicação}
+
+\ldots
+
+\subsubsection{Exemplos}
+
+\ldots
+
 \section{Cronograma}
+
+\ldots
+{\it (falta incluir figura com diagrama de Gantt de todas as tarefas previstas)}
+
+\subsection{Tarefas}
 
 \ldots
 
@@ -118,7 +140,11 @@ Uma conjunto de modulos adicionais podem ser adicionados ao projeto de acordo co
 
 \subsection{LEDs de Alto Brilho}
 
-A proposta deste modulo adiconal é incorporar um conjunto de quatro LEDs de alto brilho, sendo que cada um deles ficaria posicionado em uma das quatro bordas da mesa.
+A proposta deste modulo adiconal é incorporar um conjunto de quatro LEDs de alto brilho, sendo que cada um deles ficaria posicionado em uma das quatro bordas da mesa. \\
+
+{\it (falta incluir figura demonstrando a posição dos LEDs na estrutura)}
+
+\ldots
 
 \subsection{Sensores Infravermelho}
 
@@ -128,9 +154,13 @@ A dificuldade deste modulo se encontra na necessidade de dispor de uma quantidad
 
 \subsection{Entrada e Saída de Audio}
 
-\ldots
+\ldots \\
+
+{\it (falta incluir figura demonstrando a simulação de um equalizador de som por meio das células ligadas (com diferentes cores))}
 
 \section{Conclusão}
+
+\ldots
 
 \subsection{Projetos Relacionados}
 
@@ -145,5 +175,13 @@ Wikipédia
  http://pt.wikipedia.org/wiki/Jogo_de_tabuleiro
  http://pt.wikipedia.org/wiki/Lista_de_jogos_de_tabuleiro 
 \end{verbatim}
+
+\section{Apendice}
+
+\ldots
+
+\subsection{Código utilizado no Arduino}
+
+\ldots
 
 \end{document}
