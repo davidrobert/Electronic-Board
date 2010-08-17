@@ -1,0 +1,133 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+
+% Pacotes 
+\usepackage[brazil]{babel} 
+%\usepackage[latin1]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amssymb} 
+\usepackage{indentfirst} 	% indentacao do primeiro paragrafo
+\usepackage{cite}  		% modo de citacao legal
+
+%\usepackage{makeidx} 		% índice remissivo
+\usepackage[nottoc]{tocbibind}  % acrescentamos a bibliografia/indice/conteudo no Table of Contents
+\usepackage{setspace}
+
+% By David
+\usepackage[dvips]{graphicx} 	% ou usa [dvips]{graphicx} ou {pdfpages}
+%\usepackage{pdfpages}		% permite o use de ``includepdf''
+\usepackage{amsthm}
+\usepackage{acronym} 
+%\usepackage[portugues,ruled,vlined,linesnumbered]{algorithm2e/algorithm2e}
+\usepackage{supertabular}
+%\usepackage[margin=3cm,noheadfoot]{geometry}
+
+
+%opening
+\title{Planejamento do Projeto}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Atividades}
+
+\begin{enumerate}
+    \item[a.] {\bf Documentação}
+	\begin{itemize}
+	    \item {\bf Descrição}: Definição das especificações e caracteristicas do projeto.
+	\end{itemize}
+
+    \item[b.] {\bf Comunicação Wi-Fi com BlackWidow}
+	\begin{itemize}
+	    \item {\bf Descrição}: Teste de comunicação do Arduino BlackWidow utilizando Wi-fi.
+	    \item {\bf Tarefas}:
+		\begin{itemize}
+			\item Definição da arquitetura a ser utilizada;
+			\item Definição de um protocolo de comunicação;
+			\item Implementação do código responsavél pela comunicação, tanto no servidor quanto no cliente;
+			\item Definição do procedimento para repetição do teste;
+			\item Documentação dos resultados obtidos.
+		\end{itemize}
+	\end{itemize}
+
+    \item[c.] {\bf Controle de uma matriz de LEDs RGB utilizando Rainbowduino}
+	\begin{itemize}
+	    \item {\bf Descrição}: Teste de controle de uma matriz de LEDs utilizando um Rainbowduino.
+	    \item {\bf Tarefas}:
+		\begin{itemize}
+		    \item Definição da arquitetura a ser utilizadas;
+		    \item Implementação do código responsavél pelo controle dos LEDs;
+		    \item Definição do procedimento para repetição do teste;
+		    \item Documentação dos resultados obtidos.
+		\end{itemize}
+	\end{itemize}
+
+    \item[d.] {\bf Controle de uma pequena quantidade de LEDs RGB utilizando Rainbowduino}
+	\begin{itemize}
+	    \item {\bf Descrição}: Teste de controle de um conjunto de 6 (seis) de LEDs RGB utilizando um Rainbowduino.
+	    \item {\bf Tarefas}:
+		\begin{itemize}
+		    \item Definição da arquitetura a ser utilizadas;
+		    \item Implementação do código responsavél pelo controle dos LEDs;
+		    \item Implementação do circuito responsavél pela conexão com os LEDs;		    
+		    \item Definição do procedimento para repetição do teste;
+		    \item Documentação dos resultados obtidos.
+		\end{itemize}
+	\end{itemize}    
+    
+    \item[e.] {\bf Cascateamento de Rainbowduinos}
+	\begin{itemize}
+	    \item {\bf Descrição}: Teste de utilização de um cascateamento de dois (2) Rainbowduinos, onde cada um deles controla um conjunto de LEDs RGB.
+	    \item {\bf Tarefas}:
+		\begin{itemize}
+		    \item Definição da arquitetura a ser utilizadas;
+		    \item Implementação do código responsavél pelo controle dos LEDs;
+		    \item Implementação do circuito responsavél pela conexão com os LEDs;		    
+		    \item Definição do procedimento para repetição do teste;
+		    \item Documentação dos resultados obtidos.
+		\end{itemize}
+	\end{itemize}
+    
+    
+    \item[f.] {\bf Definição dos protocolos de comunicação}
+	\begin{itemize}
+	    \item {\bf Descrição}: Definição dos protocolos de utilização no projeto \ldots
+	    \item {\bf Tarefas}:
+		\begin{itemize}
+		    \item \ldots
+		    \item Documentação dos protocolos.
+		\end{itemize}
+	\end{itemize}
+
+\end{enumerate}
+
+\section{Cronograma}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+              & {\bf a.}     & {\bf b.}     & {\bf c.}     & {\bf d.}     & {\bf e.}     & {\bf f.}     & {\bf g.}     \\ \hline 
+{\bf Semana}  & Todos        & Douglas      & David        & David        & David        &              &              \\ \hline \hline
+15/08 - 21/08 & $\checkmark$ & $\checkmark$ & $\checkmark$ &              &              &              &              \\ \hline
+22/08 - 28/08 & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ &              &              &              \\ \hline
+29/08 - 05/09 & $\checkmark$ &              &              & $\checkmark$ & $\checkmark$ &              &              \\ \hline
+05/09 - 11/09 & $\checkmark$ &              &              &              & $\checkmark$ &              &              \\ \hline
+12/09 - 18/09 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+19/09 - 25/09 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+26/09 - 02/10 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+03/10 - 09/10 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+10/10 - 16/10 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+17/10 - 23/10 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+24/10 - 30/10 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+31/10 - 06/11 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+07/11 - 13/11 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+14/11 - 20/11 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+21/11 - 27/11 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+28/11 - 04/12 & $\checkmark$ &              &              &              &              &              &              \\ \hline
+\end{tabular}
+
+\ldots
+
+\end{document}
