@@ -24,7 +24,7 @@
 
 
 %opening
-\title{Tabuleiro Eletrônico com Arduino}
+\title{Tabuleiro Eletrônico}
 \author{}
 \date{}
 
@@ -48,8 +48,9 @@ A proposta deste projeto é construir um tabuleiro eletrônico, a qual possa, po
 % Após a finalização do projeto o tempo verbal deverá ser modificado para o presente. Exemplo: ''a mesa tem...''
 
 \section{Introdução}
+Tabuleiro é um componente importante do funcionamento de diferentes tipos de jogos pois trata-se de um recurso de síntese visual que tem como objetivo organizar elementos em uma simulação de um campo visual. \\
 
-\ldots
+O projeto consiste em construir uma mesa com um tabuleiro eletrônico interno, sob o tampo central de vidro. Sendo que a projeção da mesa com todos os seus componentes acionados pode ser vista na Figura \ref{figura_layout}.  
 
 \begin{center}
 \begin{figure}[h!]
@@ -60,10 +61,11 @@ A proposta deste projeto é construir um tabuleiro eletrônico, a qual possa, po
 \end{figure}
 \end{center}
 
+O controle do tabuleiro eletrônico, incluindo quais componentes devem ficar acionado e com qual cor ou intensidade, será acionado via software. Sendo que o mesmo instalado em um dispositivo portatil, como laptop ou {\it smartphone}.
+
 \section{Estrutura}
 
-
-{\it (falta complementar e reorganizar esta seção)} \\
+%{\it (falta complementar e reorganizar esta seção)} \\
 
 A estrutura principal da mesa será composta por um conjunto de celulas hexagonais e retangulares, que ficarão sob um tampo de vidro fumê. 
 Cada uma células hexagonais será composta por dois LEDs RGB separado por uma divisoria que cortará ao meio a célula. 
@@ -98,10 +100,33 @@ Cada exagono que compõe a estrutura central da mesa terá dois LEDs RGB de 5mm.
 \end{center}
 
 {\it (falta incluir figura demonstrando somente parte das bordas de uma célula hexadecimal acesa)}
-s
+
 \section{Hardware}
 
-\ldots
+\subsection{Componentes Estruturais}
+
+Os componentes estruturais interno a mesa serão usinados em acrilico. A Figura \ref{componentes} indica cada um dos componentes.
+
+\begin{center}
+\begin{figure}[h!]
+	\center
+	\includegraphics[angle=0, scale=0.70]{./img/componentes.eps}
+	\label{componentes}
+	\caption{Composição dos componentes estruturais internos.}
+\end{figure}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+{\bf Componente} & {\bf Quantidade Necessária} \\ \hline \hline
+A & 4 \\ \hline
+B & 2 \\ \hline
+C & 2 \\ \hline
+D & 4 \\ \hline
+X & 1 \\ \hline
+\end{tabular}
+\end{center}
 
 \subsection{Arquitetura}
 
