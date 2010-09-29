@@ -1,0 +1,38 @@
+import java.awt.Container;
+import java.awt.Graphics;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import sl.shapes.RegularPolygon;
+import sl.shapes.RoundPolygon;
+
+public class Poligono extends JPanel {
+
+	public void paintComponent(Graphics g) {
+		RegularPolygon r = new RegularPolygon(100, 100, 100, 6);
+		RoundPolygon p = new RoundPolygon(r, 10);
+		
+		g.fillPolygon(p);
+	}
+
+	public static void main(String[] args) {
+
+		JFrame frame = new JFrame();
+		frame.setTitle("Teste");
+
+		frame.setSize(300, 200);
+		frame.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+		Container contentPane = frame.getContentPane();
+
+		contentPane.add(new Poligono());
+
+		frame.show();
+	}
+}
